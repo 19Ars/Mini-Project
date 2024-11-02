@@ -1,0 +1,89 @@
+/* Tampilan Umum */
+
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #111827;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+
+/* Tampilan Grid Puzzle */
+
+.grid {
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d1d5db;
+    font-weight: bold;
+    color: #111827;
+    text-transform: uppercase;
+}
+
+.cell.highlight {
+    background-color: #34d399;
+    /* Warna hijau terang untuk highlight kata */
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Permainan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Buat Permainan Puzzle Kata</h1>
+        <div class="form-group">
+            <label for="gridSize">Lebar Kotak Puzzle:</label>
+            <input type="number" id="gridSize" min="5" max="20" value="10">
+        </div>
+
+        <div class="form-group">
+            <label for="wordList">Kata-Kata yang Dicari (pisahkan dengan koma):</label>
+            <input type="text" id="wordList" placeholder="Contoh: JAVA, PYTHON, PHP">
+        </div>
+
+        <button onclick="generatePuzzle()">Buat Puzzle</button>
+    </div>
+</body>
+
+</html>
