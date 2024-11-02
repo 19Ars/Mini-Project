@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.calculator {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.display {
+    width: 94%;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #666;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+}
+
+input[type="button"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin: 5px 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #666;
+}
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #0466e7, #04e763, #e1f014, #f08914);
+    background-size: 200% 200%;
+    animation: moveBackground 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 10%;
+    }
+    10% {
+        background-position: 20% 20%;
+    }
+    20% {
+        background-position: 40% 30%;
+    }
+    30% {
+        background-position: 60% 40%;
+    }
+    40% {
+        background-position: 80% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    60% {
+        background-position: 80% 50%;
+    }
+    70% {
+        background-position: 60% 40%;
+    }
+    80% {
+        background-position: 40% 30%;
+    }
+    90% {
+        background-position: 20% 20%;
+    }
+    100% {
+        background-position: 0% 10%;
+    }
+}

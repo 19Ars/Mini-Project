@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Menambahkan SweetAlert2 -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>KALKULATOR ONLINE</h1>
+    <form name="sci-calc">
+        <div class="calculator">
+            <input class="display" name="display" value="0" readonly>
+            <table cellspacing="0" cellpadding="1">
+                <tr>
+                    <td><input type="button" value="exp" onclick="processInput(this.form, 'exp')"></td>
+                    <td><input type="button" value="7" onclick="addChar(this.form.display, '7')"></td>
+                    <td><input type="button" value="8" onclick="addChar(this.form.display, '8')"></td>
+                    <td><input type="button" value="9" onclick="addChar(this.form.display, '9')"></td>
+                    <td><input type="button" value=":" onclick="addChar(this.form.display, '/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="ln" onclick="processInput(this.form, 'ln')"></td>
+                    <td><input type="button" value="4" onclick="addChar(this.form.display, '4')"></td>
+                    <td><input type="button" value="5" onclick="addChar(this.form.display, '5')"></td>
+                    <td><input type="button" value="6" onclick="addChar(this.form.display, '6')"></td>
+                    <td><input type="button" value="x" onclick="addChar(this.form.display, '*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="sqrt" onclick="processInput(this.form, 'sqrt')"></td>
+                    <td><input type="button" value="1" onclick="addChar(this.form.display, '1')"></td>
+                    <td><input type="button" value="2" onclick="addChar(this.form.display, '2')"></td>
+                    <td><input type="button" value="3" onclick="addChar(this.form.display, '3')"></td>
+                    <td><input type="button" value="-" onclick="addChar(this.form.display, '-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="sq" onclick="processInput(this.form, 'sq')"></td>
+                    <td><input type="button" value="0" onclick="addChar(this.form.display, '0')"></td>
+                    <td><input type="button" value="." onclick="addChar(this.form.display, '.')"></td>
+                    <td><input type="button" value="+/-" onclick="changeSign(this.form.display)"></td>
+                    <td><input type="button" value="+" onclick="addChar(this.form.display, '+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="(" onclick="addChar(this.form.display, '(')"></td>
+                    <td><input type="button" value="cos" onclick="processInput(this.form, 'cos')"></td>
+                    <td><input type="button" value="sin" onclick="processInput(this.form, 'sin')"></td>
+                    <td><input type="button" value="tan" onclick="processInput(this.form, 'tan')"></td>
+                    <td><input type="button" value=")" onclick="addChar(this.form.display, ')')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="clear" onclick="this.form.display.value = 0"></td>
+                    <td colspan="3"><input type="button" value="backspace" onclick="deleteChar(this.form.display)"></td>
+                    <td><input type="button" value="enter" onclick="compute(this.form)"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <div class="background-animation"></div>
+</body>
+
+</html>
