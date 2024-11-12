@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="carousel prev next">
+        <!-- Main Content Card Slider -->
+        <div class="list">
+            <div class="item">
+                <img src="img/img1.jpg" alt="" srcset="">
+                <div class="content">
+                    <div class="author">Animal</div>
+                    <div class="title">Jenis Kucing</div>
+                    <div class="topic">Persia</div>
+                    <div class="desc">
+                        {{ lipsum(n=5, html=True, min=20, max=30) }}
+                    </div>
+                    <div class="buttons">
+                        <button>LIHAT LEBIH</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img2.jpg" alt="" srcset="">
+                <div class="content">
+                    <div class="author">Animal</div>
+                    <div class="title">Jenis Kucing</div>
+                    <div class="topic">Maine Coon</div>
+                    <div class="desc">
+                        {{ lipsum(n=5, html=True, min=20, max=30) }}
+                    </div>
+                    <div class="buttons">
+                        <button>LIHAT LEBIH</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img3.jpg" alt="" srcset="">
+                <div class="content">
+                    <div class="author">Animal</div>
+                    <div class="title">Jenis Kucing</div>
+                    <div class="topic">Siam</div>
+                    <div class="desc">
+                        {{ lipsum(n=5, html=True, min=20, max=30) }}
+                    </div>
+                    <div class="buttons">
+                        <button>LIHAT LEBIH</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img4.jpg" alt="" srcset="">
+                <div class="content">
+                    <div class="author">Animal</div>
+                    <div class="title">Jenis Kucing</div>
+                    <div class="topic">Scottish Fold</div>
+                    <div class="desc">
+                        {{ lipsum(n=5, html=True, min=20, max=30) }}
+                    </div>
+                    <div class="buttons">
+                        <button>LIHAT LEBIH</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/img5.jpg" alt="" srcset="">
+                <div class="content">
+                    <div class="author">Animal</div>
+                    <div class="title">Jenis Kucing</div>
+                    <div class="topic">British Shorthair</div>
+                    <div class="desc">
+                        {{ lipsum(n=5, html=True, min=20, max=30) }}
+                    </div>
+                    <div class="buttons">
+                        <button>LIHAT LEBIH</button>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Thumbnail Card Slider -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="img/img2.jpg" alt="" srcset="">
+                <div class="content">
+                    <div class="title">
+                        Maine Coon
+                    </div>
+                    <div class="desc">
+                        Salah satu ras kucing terbesar dengan bulu tebal dan ekor panjang. Mereka ramah dan suka bermain.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="img/img3.jpg" alt="" srcset="">
+                <div class="content">
+                    <div class="title">
+                        Siam
+                    </div>
+                    <div class="desc">
+                        Kucing dengan tubuh ramping dan mata biru yang mencolok. Mereka sangat vokal dan suka berinteraksi dengan manusia.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="img/img4.jpg" alt="" srcset="">
+                <div class="content">
+                    <div class="title">
+                        Scottish Fold
+                    </div>
+                    <div class="desc">
+                        Kucing dengan telinga yang melipat ke depan. Mereka ramah dan suka bermain.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="img/img5.jpg" alt="" srcset="">
+                <div class="content">
+                    <div class="title">
+                        British Shorthair
+                    </div>
+                    <div class="desc">
+                        Kucing dengan tubuh kekar dan bulu pendek. Mereka tenang dan penyayang.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <div class="item">
+                <img src="img/img1.jpg" alt="" srcset="">
+                <div class="content">
+                    <div class="title">
+                        Persia
+                    </div>
+                    <div class="desc">
+                        Kucing dengan bulu panjang dan wajah datar. Mereka dikenal karena sifatnya yang tenang dan penyayang.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrows">
+        <button id="prev"></button>
+        <button id="next"></button>
+    </div>
+    <div class="time"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
